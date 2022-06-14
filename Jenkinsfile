@@ -27,7 +27,7 @@ pipeline {
     disableConcurrentBuilds()
     timeout(time: 1, unit: 'HOURS')
     withAWS(credentials: params.credential, region: params.region)
-    ansiColor('xterm')
+    //ansiColor('xterm')
   }
 
   agent { label 'master' }
